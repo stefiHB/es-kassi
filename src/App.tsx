@@ -21,6 +21,9 @@ function App() {
                   <Route path="/" exact>
                     <Redirect to={'/es-kassi/notfound'} />
                   </Route>
+                  <Route path="/es-kassi" exact>
+                      <Redirect to={'/es-kassi/home'} />
+                  </Route>
                   <Route path="/es-kassi/home" >
                       <Home/>
                   </Route>
