@@ -1,0 +1,21 @@
+
+.container {
+    justify-content: center;
+    background: linear-gradient(45deg, rgba(145, 152, 229, 0.15), rgba(230, 100, 101, 0.2));
+    max-width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 30px 10px 50px 10px;
+
+}
+
+.container h1 {
+    font-size: 6vh;
+    margin-bottom: 10px;
+}
+
+.container p {
+    max-width: 450px;
+    margin: auto;
+    text-align: justify;
+}

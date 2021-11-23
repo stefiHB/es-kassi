@@ -1,17 +1,42 @@
 import React from 'react';
-import logo from './logo.png';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
+import Home from "./pages/Home";
+import MainHeader from "./components/MainHeader";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import NotFound from "./pages/NotFound";
 
 function App() {
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Fun stuff coming soon...
-        </p>
-      </header>
-    </div>
+      <div >
+          <MainHeader />
+
+          <main>
+              <Switch>
+                  <Route path="/" exact>
+                    <Redirect to={'/es-kassi/notfound'} />
+                  </Route>
+                  <Route path="/es-kassi/home" >
+                      <Home/>
+                  </Route>
+                  <Route path="/es-kassi/projects" exact>
+                      <Projects/>
+                  </Route>
+
+                  <Route path="/es-kassi/projects/:projectId">
+                      <ProjectDetail/>
+                  </Route>
+                  <Route path="/es-kassi/notfound" exact>
+                      <NotFound />
+                  </Route>
+              </Switch>
+          </main>
+      </div>
   );
 }
 
