@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './../logo.png';
 import './Home.css'
-import { Route } from 'react-router-dom'
 
 const Home = () => {
     return(

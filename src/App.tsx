@@ -4,8 +4,8 @@ import './App.css';
 import Home from "./pages/Home";
 import MainHeader from "./components/MainHeader";
 import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
+import TicTacToe from "./tic-tac-toe/pages/TicTacToe";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-      <div >
+      <div className="context">
           <MainHeader />
 
           <main>
@@ -31,9 +31,10 @@ function App() {
                       <Projects/>
                   </Route>
 
-                  <Route path="/es-kassi/projects/:projectId">
-                      <ProjectDetail/>
+                  <Route path='/es-kassi/projects/tictactoe'>
+                      <TicTacToe />
                   </Route>
+
                   <Route path="/es-kassi/notfound" exact>
                       <NotFound />
                   </Route>
