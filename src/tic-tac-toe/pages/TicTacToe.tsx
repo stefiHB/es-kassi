@@ -2,7 +2,7 @@ import Board from "../components/Board";
 import {IconButton, styled} from "@mui/material";
 import bgImage from './../assets/paper-bg.jpeg'
 import {useState} from "react";
-import TurnHeader from "../../components/TurnHeader";
+import TurnHeader from "../components/TurnHeader";
 import {SquareState} from "../components/Square";
 import ReplaySharpIcon from '@mui/icons-material/ReplaySharp';
 

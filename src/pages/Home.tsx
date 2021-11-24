@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './../logo.png';
 import './Home.css'
+import Quote from "../components/Quote";
 
 const Home = () => {
     return(
@@ -11,6 +12,7 @@ const Home = () => {
                 <p>
                     Fun stuff coming soon... #not
                 </p>
+                <Quote />
             </header>
 
         </div>
