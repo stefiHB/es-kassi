@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/es-kassi/static/css/main.3ccd7e9a.chunk.css",
-    "main.js": "/es-kassi/static/js/main.914d89e9.chunk.js",
-    "main.js.map": "/es-kassi/static/js/main.914d89e9.chunk.js.map",
-    "runtime-main.js": "/es-kassi/static/js/runtime-main.076b06f1.js",
-    "runtime-main.js.map": "/es-kassi/static/js/runtime-main.076b06f1.js.map",
-    "static/js/2.b9f57209.chunk.js": "/es-kassi/static/js/2.b9f57209.chunk.js",
-    "static/js/2.b9f57209.chunk.js.map": "/es-kassi/static/js/2.b9f57209.chunk.js.map",
-    "static/js/3.36935306.chunk.js": "/es-kassi/static/js/3.36935306.chunk.js",
-    "static/js/3.36935306.chunk.js.map": "/es-kassi/static/js/3.36935306.chunk.js.map",
+    "main.css": "/es-kassi/static/css/main.7945a45f.chunk.css",
+    "main.js": "/es-kassi/static/js/main.0ed8561b.chunk.js",
+    "main.js.map": "/es-kassi/static/js/main.0ed8561b.chunk.js.map",
+    "runtime-main.js": "/es-kassi/static/js/runtime-main.be841d5b.js",
+    "runtime-main.js.map": "/es-kassi/static/js/runtime-main.be841d5b.js.map",
+    "static/js/2.7c0ca9d7.chunk.js": "/es-kassi/static/js/2.7c0ca9d7.chunk.js",
+    "static/js/2.7c0ca9d7.chunk.js.map": "/es-kassi/static/js/2.7c0ca9d7.chunk.js.map",
+    "static/js/3.d2158bc8.chunk.js": "/es-kassi/static/js/3.d2158bc8.chunk.js",
+    "static/js/3.d2158bc8.chunk.js.map": "/es-kassi/static/js/3.d2158bc8.chunk.js.map",
     "index.html": "/es-kassi/index.html",
-    "static/css/main.3ccd7e9a.chunk.css.map": "/es-kassi/static/css/main.3ccd7e9a.chunk.css.map",
-    "static/js/2.b9f57209.chunk.js.LICENSE.txt": "/es-kassi/static/js/2.b9f57209.chunk.js.LICENSE.txt",
+    "static/css/main.7945a45f.chunk.css.map": "/es-kassi/static/css/main.7945a45f.chunk.css.map",
+    "static/js/2.7c0ca9d7.chunk.js.LICENSE.txt": "/es-kassi/static/js/2.7c0ca9d7.chunk.js.LICENSE.txt",
     "static/media/404-page-not-found.de28d47e.png": "/es-kassi/static/media/404-page-not-found.de28d47e.png",
-    "static/media/logo.26883afa.png": "/es-kassi/static/media/logo.26883afa.png"
+    "static/media/logo.26883afa.png": "/es-kassi/static/media/logo.26883afa.png",
+    "static/media/paper-bg.f33273dd.jpeg": "/es-kassi/static/media/paper-bg.f33273dd.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.076b06f1.js",
-    "static/js/2.b9f57209.chunk.js",
-    "static/css/main.3ccd7e9a.chunk.css",
-    "static/js/main.914d89e9.chunk.js"
+    "static/js/runtime-main.be841d5b.js",
+    "static/js/2.7c0ca9d7.chunk.js",
+    "static/css/main.7945a45f.chunk.css",
+    "static/js/main.0ed8561b.chunk.js"
   ]
 }
