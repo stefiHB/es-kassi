@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
-
+import  './Projects.css'
 const Projects = () => {
 
     return (
 
-        <section>
-            <h1>Projects</h1>
-            <ul>
-                <li><Link to='/es-kassi/projects/tictactoe'>Tic Tac Toe</Link></li>
+        <div className="content">
+            <section className="grid-container">
+                <h1>Projects</h1>
+                <ul className="projects">
+                    <li><Link to='/es-kassi/projects/tictactoe'>Tic Tac Toe</Link></li>
 
-            </ul>
+                </ul>
+            </section>
 
-        </section>
+
+        </div>
     );
 }
 

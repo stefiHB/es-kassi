@@ -137,7 +137,6 @@ const TicTacToe = () => {
                         sx={{paddingTop: '30px'}}
                     />
                 </IconButton>
-
             </TicTacToeWrapper>
         </TicTacToeBackground>
     )

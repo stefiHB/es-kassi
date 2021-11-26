@@ -1,41 +1,149 @@
-.header {
-    width: 100%;
-    height: 4rem;
-    background-color: #044599;
-    padding: 0 10%;
+.extraSpace {
+    width: 100vw;
+    min-width: 4px;
+    min-height: 70px;
 }
 
-.header nav {
-    height: 100%;
+.context {
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(170deg, #061a2c, #282f31);
 }
 
-.header ul {
-    height: 100%;
-    list-style: none;
+.context nav {
     display: flex;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    height: 70px;
+    list-style: none;
     padding: 0;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.header li {
+.signature h5 {
+    color: #ff9900;
+    font-size: 1.5rem;
+    font-family: "Menlo";
+    padding-left: 5vw;
+    margin-right: 100px;
+}
+
+.context ul {
+    list-style: none;
+    display: flex;
+}
+
+.context li {
     margin: 0 1rem;
     width: 5rem;
 }
 
-.header a {
-    color: white;
+.context a {
+    color: ghostwhite;
     text-decoration: none;
 }
 
-.header a:active,
-.header a.active {
-    color: #95bcf0;
+.context a:active,
+.context a.active {
     padding-bottom: 0.25rem;
-    border-bottom: 4px solid #95bcf0;
+    border-bottom: 2px solid #ff9900;
 }
 
-.header a:hover {
-    color: #95bcf0;
+.context a:hover {
+    color: #ff9900;
 }
+
+img.fadeSection {
+    z-index: 2;
+    width: 100vw;
+    height: 400px;
+    fill: #061a2c;
+
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+div.temporaryLogo {
+    z-index: 10;
+    position: absolute;
+    right: 40px;
+    top: 220px;
+    width: 150px;
+    height: 100px;
+    color: red;
+}
+
+div.temporaryLogo p {
+    padding-top: 20px;
+    color: rgba(196, 197, 201, 0.47);
+}
+
+
+div.temporaryLogo svg {
+    pointer-events: none;
+    fill: #c4c5c9;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    div.temporaryLogo svg {
+        animation: gear-spin infinite 5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    div.temporaryLogo p {
+        animation: text-shake infinite 3s ease-in-out;
+    }
+}
+
+
+
+@keyframes text-shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes gear-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    16% {
+        transform: rotate(60deg);
+    }
+    32% {
+        transform: rotate(120deg);
+    }
+    49% {
+        transform: rotate(180deg);
+    }
+    66% {
+        transform: rotate(240deg);
+    }
+    82% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+

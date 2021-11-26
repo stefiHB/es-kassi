@@ -14,8 +14,6 @@ function App() {
 
   return (
       <div className="context">
-          <MainHeader />
-
           <main>
               <Switch>
                   <Route path="/" exact>
@@ -25,9 +23,11 @@ function App() {
                       <Redirect to={'/es-kassi/home'} />
                   </Route>
                   <Route path="/es-kassi/home" >
+                      <MainHeader />
                       <Home/>
                   </Route>
                   <Route path="/es-kassi/projects" exact>
+                      <MainHeader />
                       <Projects/>
                   </Route>
 

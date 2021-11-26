@@ -1,6 +1,5 @@
-
-main {
-    margin: 0;
-    padding: 0;
-
+body {
+    text-align: center;
+    background: linear-gradient(170deg, #061a2c, #2a2727);
+    height: 100vh;
 }

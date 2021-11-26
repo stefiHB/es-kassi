@@ -1,0 +1,19 @@
+.content {
+    height: 100em;
+    background-color: #061a2c;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    text-align: left;
+    font-size: calc(10px + 2vmin);
+}
+
+
+ul.projects  {
+    list-style: none;
+}
+
+
+.projects a {
+    color: ghostwhite;
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+<svg fill="#061a2c" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" height="21" width="747" y="382" x="33.5" stroke="#fff"  />
+  <ellipse ry="26.5" rx="180.49999" id="svg_11" cy="373.5" cx="213.00002"  />
+  <ellipse ry="65.5" rx="74" id="svg_12" cy="296.5" cx="454.5"    />
+  <ellipse ry="46" rx="121.5" id="svg_13" cy="343" cx="557"    />
+  <ellipse ry="39.5" rx="116.5" id="svg_14" cy="274.5" cx="582"    />
+  <ellipse ry="61" rx="71.5" id="svg_15" cy="321" cx="670"    />
+  <ellipse ry="53.5" rx="154" id="svg_16" cy="342.5" cx="433.5"    />
+  <ellipse ry="36.5" rx="137" id="svg_17" cy="357.5" cx="633.5"    />
+  <ellipse ry="12" rx="71" id="svg_18" cy="250" cx="704.5"    />
+  <rect id="svg_19" height="156" width="106" y="243" x="678.5"    />
+  <ellipse ry="21" rx="128.5" id="svg_20" cy="241" cx="655"  />
+  <rect   id="svg_22" height="27" width="39" y="372" x="31.5"  />
+  <rect   id="svg_23" height="36" width="752.99998" y="375" x="31.5"  />
+  <ellipse transform="translate(-34 1)" ry="60.5" rx="150.03809" id="svg_24" cy="349.5" cx="51.42309"  />
+  <ellipse ry="108.5" rx="38" id="svg_27" cy="302.5" cx="788"    />
+  <ellipse ry="5.5" rx="46" id="svg_29" cy="239.5" cx="517"    />
+  <ellipse ry="11" rx="73" id="svg_30" cy="351" cx="269"    />
+ </g>
+</svg>
