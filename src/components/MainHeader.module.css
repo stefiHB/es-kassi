@@ -28,7 +28,7 @@
     font-size: 1.5rem;
     font-family: "Menlo";
     padding-left: 5vw;
-    margin-right: 100px;
+    margin-right: 1rem;
 }
 
 .context ul {
@@ -62,9 +62,9 @@ img.fadeSection {
     height: 400px;
     fill: #061a2c;
 
-    position: absolute;
+    position: relative;
     left: 0;
-    top: 150px;
+    bottom: 0;
 }
 
 div.temporaryLogo {
