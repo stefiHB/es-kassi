@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/es-kassi/static/css/main.fa4cbc33.chunk.css",
-    "main.js": "/es-kassi/static/js/main.8c635598.chunk.js",
-    "main.js.map": "/es-kassi/static/js/main.8c635598.chunk.js.map",
-    "runtime-main.js": "/es-kassi/static/js/runtime-main.acf6170c.js",
-    "runtime-main.js.map": "/es-kassi/static/js/runtime-main.acf6170c.js.map",
-    "static/js/2.794f5a02.chunk.js": "/es-kassi/static/js/2.794f5a02.chunk.js",
-    "static/js/2.794f5a02.chunk.js.map": "/es-kassi/static/js/2.794f5a02.chunk.js.map",
-    "static/js/3.79880a15.chunk.js": "/es-kassi/static/js/3.79880a15.chunk.js",
-    "static/js/3.79880a15.chunk.js.map": "/es-kassi/static/js/3.79880a15.chunk.js.map",
+    "main.css": "/es-kassi/static/css/main.c47df072.chunk.css",
+    "main.js": "/es-kassi/static/js/main.3ad65126.chunk.js",
+    "main.js.map": "/es-kassi/static/js/main.3ad65126.chunk.js.map",
+    "runtime-main.js": "/es-kassi/static/js/runtime-main.738c451f.js",
+    "runtime-main.js.map": "/es-kassi/static/js/runtime-main.738c451f.js.map",
+    "static/js/2.c21dfae8.chunk.js": "/es-kassi/static/js/2.c21dfae8.chunk.js",
+    "static/js/2.c21dfae8.chunk.js.map": "/es-kassi/static/js/2.c21dfae8.chunk.js.map",
+    "static/js/3.8a08cf1b.chunk.js": "/es-kassi/static/js/3.8a08cf1b.chunk.js",
+    "static/js/3.8a08cf1b.chunk.js.map": "/es-kassi/static/js/3.8a08cf1b.chunk.js.map",
     "index.html": "/es-kassi/index.html",
-    "static/css/main.fa4cbc33.chunk.css.map": "/es-kassi/static/css/main.fa4cbc33.chunk.css.map",
-    "static/js/2.794f5a02.chunk.js.LICENSE.txt": "/es-kassi/static/js/2.794f5a02.chunk.js.LICENSE.txt",
+    "static/css/main.c47df072.chunk.css.map": "/es-kassi/static/css/main.c47df072.chunk.css.map",
+    "static/js/2.c21dfae8.chunk.js.LICENSE.txt": "/es-kassi/static/js/2.c21dfae8.chunk.js.LICENSE.txt",
     "static/media/404-page-not-found.de28d47e.png": "/es-kassi/static/media/404-page-not-found.de28d47e.png",
     "static/media/footer_fade.bb3b164d.svg": "/es-kassi/static/media/footer_fade.bb3b164d.svg",
-    "static/media/paper-bg.f33273dd.jpeg": "/es-kassi/static/media/paper-bg.f33273dd.jpeg"
+    "static/media/o.598de53f.svg": "/es-kassi/static/media/o.598de53f.svg",
+    "static/media/paper-bg.f33273dd.jpeg": "/es-kassi/static/media/paper-bg.f33273dd.jpeg",
+    "static/media/x.2dd1c11b.svg": "/es-kassi/static/media/x.2dd1c11b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.acf6170c.js",
-    "static/js/2.794f5a02.chunk.js",
-    "static/css/main.fa4cbc33.chunk.css",
-    "static/js/main.8c635598.chunk.js"
+    "static/js/runtime-main.738c451f.js",
+    "static/js/2.c21dfae8.chunk.js",
+    "static/css/main.c47df072.chunk.css",
+    "static/js/main.3ad65126.chunk.js"
   ]
 }
