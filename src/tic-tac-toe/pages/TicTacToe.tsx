@@ -1,7 +1,7 @@
 import Board from "../components/Board";
 import {IconButton, styled} from "@mui/material";
 import bgImage from './../assets/paper-bg.jpeg'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import TurnHeader from "../components/TurnHeader";
 import {SquareState} from "../components/Square";
 import ReplaySharpIcon from '@mui/icons-material/ReplaySharp';
@@ -9,7 +9,7 @@ import ReplaySharpIcon from '@mui/icons-material/ReplaySharp';
 const TicTacToeBackground = styled('div')(() => ({
     width: '100vw',
     height: '100vh',
-    background: `url(${bgImage}) rgba(0, 0, 0, 0.1)`,
+    background: `url(${bgImage}) rgba(0, 0, 0, 0.2)`,
     backgroundSize: 'cover',
     overflow: 'hidden'
 }))
@@ -46,10 +46,18 @@ const TicTacToe = () => {
     const [isXTurn, setIsXTurn] = useState(true);
     const [hasWinner, setHasWinner] = useState(false);
     const [winner, setWinner] = useState('');
+    const [hasGameFinished, setGameAsFinished] = useState(false);
 
     console.log('has winner and board history...')
     console.log(hasWinner);
     console.log(history.boardHistory)
+
+    useEffect(() => {
+        const latestBoard = history.boardHistory[history.currentStep].board;
+        let isGameOutOMoves = true ;
+        latestBoard.forEach(square => isGameOutOMoves = isGameOutOMoves && square !== '');
+        setGameAsFinished(isGameOutOMoves);
+    }, [history.boardHistory.length])
 
     const onPickHandler = (squareId: number) => {
         // Add new record on history
@@ -66,7 +74,6 @@ const TicTacToe = () => {
             };
         })
         setIsXTurn((prevState => !prevState));
-
     }
 
     const onRestartHandler = () => {
@@ -80,6 +87,7 @@ const TicTacToe = () => {
         setIsXTurn(true);
         setHasWinner(false);
         setWinner('');
+        setGameAsFinished(false);
     }
 
     const onWinnerCheck = () => {
@@ -98,14 +106,18 @@ const TicTacToe = () => {
             const latestBoard = history.boardHistory[history.currentStep].board;
             winningIndexes.forEach((row, rowIndex) => {
                 const [index1, index2, index3] = winningIndexes[rowIndex];
+
                 if (latestBoard[index1] &&
                     latestBoard[index1] === latestBoard[index2] &&
                     latestBoard[index1] === latestBoard[index3])
                 {
                     setHasWinner(true)
                     setWinner(latestBoard[index1])
+                    setGameAsFinished(true)
                 }
             })
+
+
         }
     }
 
@@ -115,22 +127,28 @@ const TicTacToe = () => {
     return (
         <TicTacToeBackground>
             <TicTacToeWrapper>
-                {hasWinner && <>
+                {hasWinner && hasGameFinished && <>
 			            <h1>We have a winner!</h1>
-			            <h5> All hail {winner} </h5>
+			            <h2> All hail {winner} </h2>
                     </>
                 }
 
-                {!hasWinner && (
-                        <>
-                            <TurnHeader whoseTurn={isXTurn ? 'X' : 'O'}/>
-                            <Board
-                                currentBoard={history.boardHistory[history.currentStep]}
-                                onPick={onPickHandler}
-                            />
-                        </>
+                {!hasWinner && !hasGameFinished && (
+                    <>
+                        <TurnHeader whoseTurn={isXTurn ? 'X' : 'O'}/>
+                        <Board
+                            currentBoard={history.boardHistory[history.currentStep]}
+                            onPick={onPickHandler}
+                        />
+                    </>
                 )}
 
+                {!hasWinner && hasGameFinished && (
+                    <>
+                        <h1>We have no winner</h1>
+                        <h2> Restart game </h2>
+                    </>
+                )}
                 <IconButton onClick={onRestartHandler} size={'large'}>
                     <ReplaySharpIcon
                         fontSize={'large'}

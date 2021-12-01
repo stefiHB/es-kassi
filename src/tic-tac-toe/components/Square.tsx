@@ -1,6 +1,7 @@
 import {styled} from "@mui/material";
-import {useState} from "react";
 import React from "react";
+import xImg from './../assets/x.svg';
+import oImg from './../assets/o.svg';
 
 
 export type SquareState = "" | "X" | "O";
@@ -8,41 +9,35 @@ interface StyledProps {
     value?: SquareState;
 }
 
+const SquareX = styled('div')(() => ({
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    'img': {
+        width: '60px',
+    }
+}));
+
 const StyledSquare = styled('button')(({value}: StyledProps) => {
 
-    let bgColor = '';
-
-    switch (value) {
-        case '':
-            bgColor = `rgba(174, 215, 209, 0.6)`;
-            break;
-
-        case 'X':
-            bgColor = `rgba(17, 190, 196, 0.8)`;
-            break;
-        case 'O':
-            bgColor = `rgba(43, 230, 130, 0.8)`;
-            break;
-        default:
-            bgColor = `rgba(90, 50,43,1)`;
-            break;
-    }
-
-
    return ({
-        width: 'auto',
-        background: `${bgColor}`,
-        border: `${value === '' ? '1px solid' : '2px solid'}`,
-        borderBottomColor: `rgba(${bgColor}, 0.1)`,
-        borderRightColor: `rgba(${bgColor}, 1)`,
-        borderLeftColor: `rgba(${bgColor}, 0.3)`,
-        borderTopColor: `rgba(${bgColor}, 1)`,
+       backgroundColor: 'rgba(238,238,238,0.22)',
+       width: 'auto',
+       maxWidth: '100px',
+       overflow: 'hidden',
+       border: `${value === '' ? '2px solid rgba(50, 50, 50, 0.9)' : '1px solid rgba(50, 50, 50, 0.9)'}`,
        '&:hover':{
-           color: `${bgColor}`,
-           opacity: `0.6`,
-           border: `3px solid`,
-
+           color: `rgba(174, 215, 209, 0.1)`,
        },
+
+       display: 'flex',
+       justifyContent: 'center',
+       alignItems: 'center'
+
+
     })
 })
 
@@ -63,10 +58,21 @@ const Square = ({id, value, callback}: SquareProps) => {
         }
     }
 
-    return <StyledSquare
-        value={value}
-        onClick={onPickHandler} >
-    </StyledSquare>
+    return (
+        <StyledSquare
+            value={value}
+            onClick={onPickHandler} >
+            { value === 'O' && <SquareX>
+                <img src={oImg} />
+            </SquareX>}
+
+            { value === 'X' && (
+                <SquareX>
+                    <img src={xImg} />
+                </SquareX>
+            )}
+        </StyledSquare>
+    )
 }
 
 export default Square;

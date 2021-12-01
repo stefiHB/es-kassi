@@ -1,4 +1,4 @@
-import Square, {SquareState} from "./Square";
+import Square from "./Square";
 import {styled, Theme, useTheme} from "@mui/material";
 import React from "react";
 import {BoardState} from "../pages/TicTacToe";
@@ -18,10 +18,10 @@ const StyledBoard = styled('div')(({width, height}: StyledProps) => ({
     )`,
     gridTemplateColumns: `repeat(${width}, 1fr)`,
     gridGap: '1px',
-    border: `2px solid #333`,
+    border: `2px solid rgba(51, 51, 51, 0.5)`,
     width: '100%',
     maxWidth: '25vw',
-    background: `rgba(255, 255, 255, 0.3)`,
+    // backgroundColor: `rgba(255, 255, 255, 0.4)`,
     margin: 'auto'
 }))
 

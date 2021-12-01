@@ -1,6 +1,7 @@
 import React from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
+
 import Home from "./pages/Home";
 import MainHeader from "./components/MainHeader";
 import Projects from "./pages/Projects";
@@ -13,14 +14,16 @@ function App() {
 
 
   return (
-      <div className="context">
+      <div>
           <main>
               <Switch>
-                  <Route path="/" exact>
-                    <Redirect to={'/es-kassi/notfound'} />
-                  </Route>
+
                   <Route path="/es-kassi" exact>
                       <Redirect to={'/es-kassi/home'} />
+                  </Route>
+                  <Route path="/es-kassi/notfound" exact>
+                      <MainHeader />
+                      <NotFound />
                   </Route>
                   <Route path="/es-kassi/home" >
                       <MainHeader />
@@ -34,10 +37,10 @@ function App() {
                   <Route path='/es-kassi/projects/tictactoe'>
                       <TicTacToe />
                   </Route>
-
-                  <Route path="/es-kassi/notfound" exact>
-                      <NotFound />
+                  <Route path="/">
+                      <Redirect to={'/es-kassi/notfound'} />
                   </Route>
+
               </Switch>
           </main>
       </div>
