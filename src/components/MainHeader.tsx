@@ -88,8 +88,12 @@ const MainHeader = () => {
             <nav>
                 <div><h5 id="signature">es_kassi</h5></div>
                 <ul>
-                    <li><NavLink activeClassName={'active'} to="/es-kassi/home">Home</NavLink></li>
-                    <li><NavLink activeClassName={'active'} to="/es-kassi/projects">Projects</NavLink></li>
+                    <li><NavLink activeClassName={'active'} to="/home">Home</NavLink></li>
+                    <li><NavLink activeClassName={'active'} to="/projects">Projects</NavLink></li>
+                    <li><NavLink activeClassName={'active'} to="/about-me">About me</NavLink></li>
+
+
+
                 </ul>
             </nav>
 

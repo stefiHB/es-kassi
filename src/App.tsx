@@ -7,6 +7,7 @@ import MainHeader from "./components/MainHeader";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import TicTacToe from "./tic-tac-toe/pages/TicTacToe";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
 
@@ -18,27 +19,31 @@ function App() {
           <main>
               <Switch>
 
-                  <Route path="/es-kassi" exact>
-                      <Redirect to={'/es-kassi/home'} />
+                  <Route path="/" exact>
+                      <Redirect to={'/home'} />
                   </Route>
-                  <Route path="/es-kassi/notfound" exact>
+                  <Route path="/notfound" exact>
                       <MainHeader />
                       <NotFound />
                   </Route>
-                  <Route path="/es-kassi/home" >
+                  <Route path="/home" >
                       <MainHeader />
                       <Home/>
                   </Route>
-                  <Route path="/es-kassi/projects" exact>
+                  <Route path="/projects" exact>
                       <MainHeader />
                       <Projects/>
                   </Route>
+                  <Route path="/about-me" exact>
+                      <MainHeader />
+                      <AboutMe/>
+                  </Route>
 
-                  <Route path='/es-kassi/projects/tictactoe'>
+                  <Route path='/projects/tictactoe'>
                       <TicTacToe />
                   </Route>
                   <Route path="/">
-                      <Redirect to={'/es-kassi/notfound'} />
+                      <Redirect to={'/notfound'} />
                   </Route>
 
               </Switch>

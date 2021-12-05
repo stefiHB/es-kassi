@@ -1,6 +1,6 @@
 import {styled} from "@mui/material";
 import React from "react";
-import xImg from './../assets/x.svg';
+import xImg from './../assets/x.png';
 import oImg from './../assets/o.svg';
 
 
