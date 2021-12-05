@@ -23,9 +23,9 @@ const StyledAboutMe = styled('div')(() => ({
     },
 
     '.highlight-section' : {
-        width: '600px',
+        width: '550px',
         backgroundColor: 'rgba(250,250,250, 0.1)',
-        padding: '10px',
+        padding: '10px 40px 10px 40px',
         marginBottom: '50px',
         textAlign: 'center',
 
@@ -37,11 +37,11 @@ const StyledAboutMe = styled('div')(() => ({
 
 
         'ul': {
-            margin: 'auto',
+            // margin: 'auto',
             width: '50vw',
 
-            paddingTop: '80px',
-            paddingBottom: '20px',
+            paddingTop: '60px',
+            paddingBottom: '10px',
             listStyle: 'none',
             display: 'flex',
             justifyContent: 'space-between',
