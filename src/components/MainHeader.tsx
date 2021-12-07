@@ -62,7 +62,7 @@ const MainHeaderWrapper = styled('div')(() => ({
 
     '#fadingDiv': {
         width: '100vw',
-        height: '300px',
+        height: '310px',
         zIndex: 2,
         overflow: 'hidden',
         display: 'flex',
@@ -75,7 +75,8 @@ const MainHeaderWrapper = styled('div')(() => ({
             zIndex: 5,
             position: 'relative'
 
-        }
+        },
+
     },
 }))
 
@@ -115,20 +116,6 @@ const MainHeader = () => {
 export default MainHeader
 
 /*
-
-
-img.fadeSection {
-    z-index: 2;
-    width: 100vw;
-    fill: #061a2c;
-
-    background-color: rgba(196, 197, 201, 0.32);
-
-    position: relative;
-    left: 0;
-    bottom: 0;
-}
-
 div.temporaryLogo {
     z-index: 10;
     position: absolute;

@@ -37,8 +37,9 @@ const StyledAboutMe = styled('div')(() => ({
 
 
         'ul': {
-            // margin: 'auto',
-            width: '50vw',
+            margin: 'auto',
+            marginLeft: '-2%',
+            width: '90%',
 
             paddingTop: '60px',
             paddingBottom: '10px',

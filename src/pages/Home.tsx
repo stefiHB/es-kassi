@@ -2,6 +2,7 @@ import React from 'react';
 import Quote from "../components/Quote";
 import BlogList from "../components/BlogList";
 import {styled} from "@mui/material";
+import Placeholder from "../components/Placeholder";
 
 
 const HomeWrapper = styled('div')(() => ({
@@ -44,6 +45,7 @@ const Home = () => {
             <section>
                 <h1>Greetings, fellas.</h1>
                 <Quote />
+                <Placeholder />
                 <BlogList />
             </section>
 
