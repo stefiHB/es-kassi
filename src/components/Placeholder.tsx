@@ -33,27 +33,29 @@ const StyledPlaceholder = styled('div')(() => ({
 
     },
 
-    '.container:hover .bounce': {
+    '.container .bounce': {
         animation: `${bounce} 350ms alternate infinite cubic-bezier(.2, .65, .6, 1)`,
+        animationDelay: 'var(--bounce-delay)'
+    },
 
-
-
+    '.container:hover .bounce': {
+        animation: `${bounce} 550ms alternate infinite cubic-bezier(.2, .65, .6, 1)`,
+        animationDelay: 'var(--bounce-delay)',
+        background: 'darkred'
     },
 
     '.bounce.one': {
         '--bounce-offset': '-40px',
-        animationDuration: '400ms'
+        '--bounce-delay': '200ms'
     },
     '.bounce.two': {
         '--bounce-offset': '-40px',
-        animationDuration: '500ms',
-        animationDelay: '1700ms'
+        '--bounce-delay': '350ms'
 
     },
     '.bounce.three': {
         '--bounce-offset': '-40px',
-        animationDuration: '600ms',
-        animationDelay: '200ms'
+        '--bounce-delay': '550ms'
     },
 
 }));
