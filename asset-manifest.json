@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/es-kassi/static/css/main.c47df072.chunk.css",
-    "main.js": "/es-kassi/static/js/main.3ad65126.chunk.js",
-    "main.js.map": "/es-kassi/static/js/main.3ad65126.chunk.js.map",
-    "runtime-main.js": "/es-kassi/static/js/runtime-main.738c451f.js",
-    "runtime-main.js.map": "/es-kassi/static/js/runtime-main.738c451f.js.map",
-    "static/js/2.c21dfae8.chunk.js": "/es-kassi/static/js/2.c21dfae8.chunk.js",
-    "static/js/2.c21dfae8.chunk.js.map": "/es-kassi/static/js/2.c21dfae8.chunk.js.map",
-    "static/js/3.8a08cf1b.chunk.js": "/es-kassi/static/js/3.8a08cf1b.chunk.js",
-    "static/js/3.8a08cf1b.chunk.js.map": "/es-kassi/static/js/3.8a08cf1b.chunk.js.map",
-    "index.html": "/es-kassi/index.html",
-    "static/css/main.c47df072.chunk.css.map": "/es-kassi/static/css/main.c47df072.chunk.css.map",
-    "static/js/2.c21dfae8.chunk.js.LICENSE.txt": "/es-kassi/static/js/2.c21dfae8.chunk.js.LICENSE.txt",
-    "static/media/404-page-not-found.de28d47e.png": "/es-kassi/static/media/404-page-not-found.de28d47e.png",
-    "static/media/footer_fade.bb3b164d.svg": "/es-kassi/static/media/footer_fade.bb3b164d.svg",
-    "static/media/o.598de53f.svg": "/es-kassi/static/media/o.598de53f.svg",
-    "static/media/paper-bg.f33273dd.jpeg": "/es-kassi/static/media/paper-bg.f33273dd.jpeg",
-    "static/media/x.2dd1c11b.svg": "/es-kassi/static/media/x.2dd1c11b.svg"
+    "main.css": "/static/css/main.c47df072.chunk.css",
+    "main.js": "/static/js/main.12ed754c.chunk.js",
+    "main.js.map": "/static/js/main.12ed754c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1fa2852d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1fa2852d.js.map",
+    "static/js/2.cf36a534.chunk.js": "/static/js/2.cf36a534.chunk.js",
+    "static/js/2.cf36a534.chunk.js.map": "/static/js/2.cf36a534.chunk.js.map",
+    "static/js/3.c4c05599.chunk.js": "/static/js/3.c4c05599.chunk.js",
+    "static/js/3.c4c05599.chunk.js.map": "/static/js/3.c4c05599.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c47df072.chunk.css.map": "/static/css/main.c47df072.chunk.css.map",
+    "static/js/2.cf36a534.chunk.js.LICENSE.txt": "/static/js/2.cf36a534.chunk.js.LICENSE.txt",
+    "static/media/404-page-not-found.de28d47e.png": "/static/media/404-page-not-found.de28d47e.png",
+    "static/media/Instagram.0b2195a6.png": "/static/media/Instagram.0b2195a6.png",
+    "static/media/footer_fade.bb3b164d.svg": "/static/media/footer_fade.bb3b164d.svg",
+    "static/media/github.255db585.svg": "/static/media/github.255db585.svg",
+    "static/media/linkedin.4efdc20c.png": "/static/media/linkedin.4efdc20c.png",
+    "static/media/o.598de53f.svg": "/static/media/o.598de53f.svg",
+    "static/media/paper-bg.f33273dd.jpeg": "/static/media/paper-bg.f33273dd.jpeg",
+    "static/media/twitter.db4f5b0c.svg": "/static/media/twitter.db4f5b0c.svg",
+    "static/media/x.2dd1c11b.svg": "/static/media/x.2dd1c11b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.738c451f.js",
-    "static/js/2.c21dfae8.chunk.js",
+    "static/js/runtime-main.1fa2852d.js",
+    "static/js/2.cf36a534.chunk.js",
     "static/css/main.c47df072.chunk.css",
-    "static/js/main.3ad65126.chunk.js"
+    "static/js/main.12ed754c.chunk.js"
   ]
 }
