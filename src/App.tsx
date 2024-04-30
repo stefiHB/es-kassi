@@ -2,7 +2,7 @@ import React from 'react';
 import {Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
 
-import Home from "./pages/Home";
+import MySkills from "./pages/MySkills";
 import MainHeader from "./components/MainHeader";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
@@ -28,21 +28,22 @@ function App() {
                   </Route>
                   <Route path="/home" >
                       <MainHeader />
-                      <Home/>
+                      <AboutMe/>
                   </Route>
                   <Route path="/projects" exact>
                       <MainHeader />
                       <Projects/>
                   </Route>
-                  <Route path="/about-me" exact>
+                  <Route path="/my-skills" exact>
                       <MainHeader />
-                      <AboutMe/>
+                      <MySkills />
                   </Route>
 
                   <Route path='/projects/tictactoe'>
                       <TicTacToe />
                   </Route>
                   <Route path="/">
+                      <MainHeader />
                       <Redirect to={'/notfound'} />
                   </Route>
 

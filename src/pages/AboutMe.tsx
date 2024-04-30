@@ -18,11 +18,11 @@ const StyledAboutMe = styled('div')(() => ({
         color: '#ff9900'
     },
 
-    'p' :{
-      color: 'ghostwhite'
+    'p': {
+        color: 'ghostwhite'
     },
 
-    '.highlight-section' : {
+    '.highlight-section': {
         width: '550px',
         backgroundColor: 'rgba(250,250,250, 0.1)',
         padding: '10px 40px 10px 40px',
@@ -50,7 +50,7 @@ const StyledAboutMe = styled('div')(() => ({
 
         },
 
-        'a' : {
+        'a': {
             color: '#fffb88',
             textDecoration: 'none',
             display: 'flex',
@@ -84,10 +84,12 @@ const AboutMe = () => {
     return <StyledAboutMe>
 
         <div className='highlight-section'>
-            <h1>Es Kassi?</h1>
+            <h1>Stephanie Kassinopoulou</h1>
             <p>
-                I'm a full time coder that tries to make a custom blog page
-                with zero experience in journalism.
+                A Software Engineer of 4 years of experience, passionate about applying high-quality coding
+                practices. My commitment lies in developing elegant and sustainable solutions, while prioritizing clean,
+                modular code structures. I can foster open and effective communication within cross-functional teams.
+                My drive for excellence extends to my willingness to continuously learn and adapt to diverse projects.
             </p>
             <div className='contact-info'>
                 <ul>
@@ -112,33 +114,6 @@ const AboutMe = () => {
                     </a></li>
                 </ul>
             </div>
-        </div>
-
-        <div className='detailed-info'>
-            <h1>Motive</h1>
-            <p>
-                After a long journey inside my head, I came in conclusion
-                that I would like to practice a certain set of skills.
-                Those skills are journalism, graphic design and styling coding skills.
-
-                But as a normal human being that I am, procrastination is my best friend ❤️.
-            </p>
-
-            <p>
-                And what's a better motive to accomplish your goals than throwing yourself out there
-                and making yourself accountable to the public?
-
-            </p>
-            <p>
-                So, this blog page will be a great way to practice all of them in the eyes of the public.
-                Hopefully, I will inspire you to follow your dreams without thinking too much about what the
-                world says, by seeing my marvelous, horrifying, slow or idiotic process of this blog.
-            </p>
-            <p>
-
-                I am rooting for anyone who tries to accomplish anything. 💪 💪 💪
-            </p>
-
         </div>
         <div className='footer'></div>
 

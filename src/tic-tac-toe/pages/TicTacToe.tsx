@@ -33,6 +33,7 @@ interface HistoryState {
     boardHistory: BoardState[],
     currentStep: number
 }
+
 const initialHistoryState: HistoryState = {
     boardHistory: [{
         board: Array(9).fill('')
@@ -54,7 +55,7 @@ const TicTacToe = () => {
 
     useEffect(() => {
         const latestBoard = history.boardHistory[history.currentStep].board;
-        let isGameOutOMoves = true ;
+        let isGameOutOMoves = true;
         latestBoard.forEach(square => isGameOutOMoves = isGameOutOMoves && square !== '');
         setGameAsFinished(isGameOutOMoves);
     }, [history.boardHistory.length])
@@ -109,8 +110,7 @@ const TicTacToe = () => {
 
                 if (latestBoard[index1] &&
                     latestBoard[index1] === latestBoard[index2] &&
-                    latestBoard[index1] === latestBoard[index3])
-                {
+                    latestBoard[index1] === latestBoard[index3]) {
                     setHasWinner(true)
                     setWinner(latestBoard[index1])
                     setGameAsFinished(true)
@@ -128,9 +128,9 @@ const TicTacToe = () => {
         <TicTacToeBackground>
             <TicTacToeWrapper>
                 {hasWinner && hasGameFinished && <>
-			            <h1>We have a winner!</h1>
-			            <h2> All hail {winner} </h2>
-                    </>
+                    <h1>We have a winner!</h1>
+                    <h2> All hail {winner} </h2>
+                </>
                 }
 
                 {!hasWinner && !hasGameFinished && (

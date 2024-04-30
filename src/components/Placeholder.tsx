@@ -63,7 +63,6 @@ const StyledPlaceholder = styled('div')(() => ({
 const Placeholder = () => {
 
     return <StyledPlaceholder>
-        <h5>Placeholder</h5>
         <div className='container'>
             <div className='bounce one'></div>
             <div className='bounce two'></div>

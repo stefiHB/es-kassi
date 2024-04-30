@@ -91,7 +91,7 @@ const MainHeader = () => {
                 <ul>
                     <li><NavLink activeClassName={'active'} to="/home">Home</NavLink></li>
                     <li><NavLink activeClassName={'active'} to="/projects">Projects</NavLink></li>
-                    <li><NavLink activeClassName={'active'} to="/about-me">About me</NavLink></li>
+                    <li><NavLink activeClassName={'active'} to="/my-skills">Skills</NavLink></li>
 
 
 

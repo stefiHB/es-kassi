@@ -39,14 +39,13 @@ const HomeWrapper = styled('div')(() => ({
 
 }))
 
-const Home = () => {
+const MySkills = () => {
     return(
         <HomeWrapper>
             <section>
-                <h1>Greetings, fellas.</h1>
+                <h1>Coming soon... skills</h1>
                 <Quote />
                 <Placeholder />
-                <BlogList />
             </section>
 
 
@@ -55,4 +54,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default MySkills;

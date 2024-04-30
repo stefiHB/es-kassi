@@ -31,7 +31,7 @@ const Projects = () => {
             <section>
                 <h1>Projects</h1>
                 <ul>
-                    <li><Link to='/es-kassi/projects/tictactoe'>Tic Tac Toe</Link></li>
+                    <li><Link to='/projects/tictactoe'>Tic Tac Toe</Link></li>
                 </ul>
             </section>
         </ProjectWrapper>
