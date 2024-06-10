@@ -11,9 +11,6 @@ import AboutMe from "./pages/AboutMe";
 
 function App() {
 
-
-
-
   return (
       <div>
           <main>

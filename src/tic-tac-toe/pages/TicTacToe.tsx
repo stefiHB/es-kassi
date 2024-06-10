@@ -1,7 +1,7 @@
 import Board from "../components/Board";
 import {IconButton, styled} from "@mui/material";
 import bgImage from './../assets/paper-bg.jpeg'
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import TurnHeader from "../components/TurnHeader";
 import {SquareState} from "../components/Square";
 import ReplaySharpIcon from '@mui/icons-material/ReplaySharp';
@@ -49,18 +49,8 @@ const TicTacToe = () => {
     const [winner, setWinner] = useState('');
     const [hasGameFinished, setGameAsFinished] = useState(false);
 
-    console.log('has winner and board history...')
-    console.log(hasWinner);
-    console.log(history.boardHistory)
-
-    useEffect(() => {
-        const latestBoard = history.boardHistory[history.currentStep].board;
-        let isGameOutOMoves = true;
-        latestBoard.forEach(square => isGameOutOMoves = isGameOutOMoves && square !== '');
-        setGameAsFinished(isGameOutOMoves);
-    }, [history.boardHistory.length])
-
     const onPickHandler = (squareId: number) => {
+
         // Add new record on history
         setHistory((prevHistory: HistoryState) => {
             const lastBoardRecord = prevHistory.boardHistory[prevHistory.currentStep].board
@@ -74,8 +64,11 @@ const TicTacToe = () => {
                 boardHistory: updatedBoardHistory
             };
         })
+
         setIsXTurn((prevState => !prevState));
+
     }
+
 
     const onRestartHandler = () => {
 
@@ -114,6 +107,8 @@ const TicTacToe = () => {
                     setHasWinner(true)
                     setWinner(latestBoard[index1])
                     setGameAsFinished(true)
+
+                    console.log('we have winner')
                 }
             })
 
