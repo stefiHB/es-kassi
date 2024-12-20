@@ -3,8 +3,6 @@ import {styled} from "@mui/material";
 
 
 const ProjectWrapper = styled('div')(() => ({
-    height: '100em',
-    backgroundColor: '#061a2c',
     paddingLeft: '7vw',
     paddingRight: '7vw',
     textAlign: 'left',

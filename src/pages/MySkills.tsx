@@ -6,8 +6,6 @@ import Placeholder from "../components/Placeholder";
 
 
 const HomeWrapper = styled('div')(() => ({
-
-    backgroundColor: '#061a2c',
     paddingLeft: '7vw',
     paddingRight: '7vw',
     textAlign: 'left',
@@ -44,8 +42,8 @@ const MySkills = () => {
         <HomeWrapper>
             <section>
                 <h1>Coming soon... skills</h1>
-                <Quote />
                 <Placeholder />
+                <Quote />
             </section>
 
 
