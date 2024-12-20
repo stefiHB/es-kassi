@@ -4,13 +4,11 @@ import twitterIcon from './../assets/twitter.svg';
 import githubIcon from './../assets/github.svg';
 import linkedinIcon from './../assets/linkedin.png';
 import instagramIcon from './../assets/Instagram.png';
-import {Typography} from "@material-ui/core";
-import {Typewriter} from "../components/Typewritter";
 
 const StyledAboutMe = styled('div')(() => ({
 
-    height: '100vh',
     paddingTop: '30px',
+    width: '100vw',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -25,11 +23,11 @@ const StyledAboutMe = styled('div')(() => ({
     },
 
     '.highlight-section': {
-        width: '50vw',
-        height: '50vh',
+        width: '50%',
+        maxWidth: '550px',
         backgroundColor: 'rgba(250,250,250, 0.1)',
         padding: '10px 40px 10px 40px',
-        // marginBottom: '50px',
+        marginBottom: '50px',
         textAlign: 'center',
 
         borderTop: '10px solid #ff9900',
@@ -38,18 +36,21 @@ const StyledAboutMe = styled('div')(() => ({
         borderRight: '1px solid #ff9900',
         borderRadius: '50px',
 
-
         'ul': {
-            margin: 'auto',
-            marginLeft: '-2%',
-            width: '90%',
-
-            paddingTop: '60px',
-            paddingBottom: '10px',
-            listStyle: 'none',
             display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            padding: '30px 10px',
+
+            listStyle: 'none',
             justifyContent: 'space-between',
             alignItems: 'center',
+
+        },
+
+        'li': {
+            flex: 1,
+            padding: '2px 5px'
 
         },
 
@@ -66,62 +67,52 @@ const StyledAboutMe = styled('div')(() => ({
         }
     },
 
-    '.footer': {
-        paddingBottom: '200px',
-    }
+    '.detailed-info': {
+        width: '600px',
+        textAlign: 'justify',
+
+        'p': {
+            paddingBottom: '15px'
+        }
+    },
 }));
 
 const AboutMe = () => {
 
     return <StyledAboutMe>
 
-        <Typewriter
-            sentences={[
-                "I am the creator of this",
-                "I don't hate programming",
-                "I lied. ...",
-            ]}
-            speed={150}
-
-        />
-
         <div className='highlight-section'>
-            <Typography variant={"h1"}>
-                Name surname
-            </Typography>
-            <Typography variant={"body1"}>
-                A Software Engineer of 4 years of experience, passionate about applying high-quality coding
+            <h1>Stephanie Kassinopoulou</h1>
+            <p>
+                A Software Engineer of 4 years of experience, trying to follow high-quality coding
                 practices. My commitment lies in developing elegant and sustainable solutions, while prioritizing clean,
                 modular code structures. I can foster open and effective communication within cross-functional teams.
                 My drive for excellence extends to my willingness to continuously learn and adapt to diverse projects.
-            </Typography>
-
+            </p>
             <div className='contact-info'>
                 <ul>
                     <li><a href='https://twitter.com/stefiHB'>
-                        <span> <img src={twitterIcon}/> </span>
+                        <span> <img src={twitterIcon} alt={"twitter"}/> </span>
                         Twitter
                     </a></li>
                     <li><a href='https://www.linkedin.com/in/stephane-kassinopoulou-878138a3/'>
-                        <span> <img src={linkedinIcon}/> </span>
+                        <span> <img src={linkedinIcon} alt={"linkedIn"}/> </span>
                         LinkedIn
 
                     </a></li>
                     <li><a href='https://github.com/stefiHB'>
-                        <span> <img src={githubIcon}/> </span>
+                        <span> <img src={githubIcon} alt={"gitHub"}/> </span>
                         GitHub
 
                     </a></li>
                     <li><a href='https://www.instagram.com/es_kassi/'>
-                        <span> <img src={instagramIcon}/> </span>
+                        <span> <img src={instagramIcon} alt={"instagram"}/> </span>
                         Instagram
 
                     </a></li>
                 </ul>
             </div>
         </div>
-        <div className='footer'></div>
-
     </StyledAboutMe>
 
 };

@@ -1,55 +1,51 @@
 import React from 'react';
-import Quote from "../components/Quote";
-import BlogList from "../components/BlogList";
-import {styled} from "@mui/material";
-import Placeholder from "../components/Placeholder";
+import './Skills.css'; // Assuming you want to add some styles
 
-
-const HomeWrapper = styled('div')(() => ({
-    paddingLeft: '7vw',
-    paddingRight: '7vw',
-    textAlign: 'left',
-    fontSize: `calc(10px + 2vmin)`,
-
-    'h1': {
-        color: '#ff9900'
+const skillsData = [
+    {
+        name: 'JavaScript',
+        level: 'Advanced',
+        description: 'Experienced in ES6+, DOM manipulation, and various frameworks.'
+    },
+    {
+        name: 'React Native',
+        level: 'Intermediate',
+        description: 'Experience in building cross-platform mobile applications.'
+    },
+    {
+        name: 'ReactJS',
+        level: 'Intermediate',
+        description: 'Good understanding of hooks, state management and UI composition.'
+    },
+    {name: 'CSS', level: 'Intermediate', description: 'Skilled in responsive design, Flexbox, CSS Grid and animation.'},
+    {
+        name: 'Ionic Angular',
+        level: 'Intermediate',
+        description: 'Knowledgeable in building hybrid mobile applications using Ionic framework and Angular.'
     },
 
-    'h5': {
-        color: '#ceb471',
-        fontWeight: 'bold',
-        borderBottom: '2px solid #ff920f'
-    },
+    // Add more skills as needed
+];
 
-    'p' : {
-        fontSize: '19px',
-        color: '#ceb471'
-    },
+const Skills = () => {
+    return (
+        <div className={"content"}>
 
-    'section': {
-        display: 'grid',
-        grid: 'auto / 55vw',
-        gridGap: '10px',
-        padding: '10px',
-        overflow: 'hidden'
-    }
+            <div className={"skills-container"}>
+                <h2>Technical Skills</h2>
+                <div className={"skills-list"}>
+                    {skillsData.map((skill, index) => (
+                        <div key={index} className={"skill-card"}>
+                            <h3>{skill.name}</h3>
+                            <p><strong>Level:</strong> {skill.level}</p>
+                            <p>{skill.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
 
-
-}))
-
-const MySkills = () => {
-    return(
-        <HomeWrapper>
-            <section>
-                <h1>Coming soon... skills</h1>
-                <Placeholder />
-                <Quote />
-            </section>
-
-
-
-        </HomeWrapper>
     );
-}
+};
 
-export default MySkills;
+export default Skills;
